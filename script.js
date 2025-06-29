@@ -92,6 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
             form.querySelectorAll('input[type="radio"]').forEach(radio => {
                 radio.disabled = false;
             });
+            // ページの一番上にスクロール
+            window.scrollTo(0, 0);
         };
         resultDiv.appendChild(retryButton);
     });
